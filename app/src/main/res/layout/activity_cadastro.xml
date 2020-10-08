@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context=".CadastroActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="143dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorsnow"
+        android:tint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/edtNome"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_add_black_24dp" />
+
+    <Button
+        android:id="@+id/btnEntrarCadastro"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Cadastrar"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnGênero" />
+
+    <Spinner
+        android:id="@+id/spnGênero"
+        android:layout_width="270dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrarCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrarCadastro"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrarCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/edtCadastroSenha" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorsnow"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/edtSobrenome"
+        app:layout_constraintEnd_toEndOf="@+id/edtSobrenome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edtSobrenome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/edtSobrenome"
+        android:layout_width="211dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorsnow"
+        android:ems="10"
+        android:hint="Sobrenome"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/edtCadastroEmail"
+        app:layout_constraintEnd_toEndOf="@+id/edtCadastroEmail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edtCadastroEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtCadastroSenha"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorsnow"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/spnGênero"
+        app:layout_constraintEnd_toEndOf="@+id/spnGênero"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/spnGênero"
+        app:layout_constraintTop_toBottomOf="@+id/edtCadastroEmail" />
+
+    <EditText
+        android:id="@+id/edtCadastroEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorsnow"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/edtCadastroSenha"
+        app:layout_constraintEnd_toEndOf="@+id/edtCadastroSenha"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/edtCadastroSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtSobrenome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

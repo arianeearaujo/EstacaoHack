@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_cellep"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <EditText
+        android:id="@+id/edtLoginEmail"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorsnow"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/edtCadastroSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edtLoginSenha"
+        android:layout_width="323dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/colorsnow"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorsnow"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
+
+    <Button
+        android:id="@+id/btnLoginEntrar"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:text="Entrar"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrarCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnEntrarCadastro"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="492dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="91dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarCadastro"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo_estacao_hack" />
+</androidx.constraintlayout.widget.ConstraintLayout>
